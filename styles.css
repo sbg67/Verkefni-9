@@ -71,20 +71,25 @@ main {
   display: flex;
   gap: var(--spacing);
   flex-wrap: wrap;
-
   list-style-type: none;
 }
 
-.forecast {
-  border-spacing: 0;
+table.forecast {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
 .forecast th,
 .forecast td {
   padding: calc(var(--spacing) / 2);
-  text-align: left;
+  text-align: center;
 }
 
 .forecast tbody tr:nth-child(2n + 1) {
   background-color: var(--color-background-zebra);
+}
+
+.forecast tr {
+  border-bottom: 1px solid #ddd;
 }
